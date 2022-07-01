@@ -7,6 +7,9 @@
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ scss/:dist/css/"
+  },
   "devDependencies": {
     "sass": "^1.53.0"
   },
