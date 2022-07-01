@@ -7,6 +7,9 @@
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "@andcorp:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ scss/:dist/css/"
   },
