@@ -1,5 +1,5 @@
 {
-  "name": "andbase-ui-styles",
+  "name": "@andcorp/andbase-ui-styles",
   "version": "0.0.1",
   "description": "AND Base UI styles",
   "main": "index.js",
@@ -7,6 +7,9 @@
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "@andcorp:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ scss/:dist/css/"
   },
