@@ -9,5 +9,8 @@
   "private": false,
   "devDependencies": {
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "modern-css-reset": "^1.4.0"
   }
 }
