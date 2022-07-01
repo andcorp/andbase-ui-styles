@@ -1,0 +1,11 @@
+/*
+基本的なタグに対する定義
+*/
+
+@use "color";
+
+html, body {
+    background-color: color.$main-background;
+    color: color.$main-text;
+    height: 100%;
+}
