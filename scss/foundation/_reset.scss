@@ -2,4 +2,5 @@
 リセットCSS
 */
 
-@forward "~modern-css-reset/dist/reset";
+// 各種ビルドに対応できるよう敢えて相対パスで指定する。
+@forward "../../node_modules/modern-css-reset/dist/reset.css";
