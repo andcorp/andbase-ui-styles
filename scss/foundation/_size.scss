@@ -3,15 +3,21 @@
 */
 
 // 絶対値定義
-$abs-1: 2px;
-$abs-2: 4px;
-$abs-3: 8px;
-$abs-4: 16px;
-$abs-5: 32px;
+$abs-xs: 4px;
+$abs-sm: 8px;
+$abs-md: 16px;
+$abs-lg: 32px;
+$abs-xl: 64px;
 
 // 文字との相対値定義
-$rem-1: 0.25rem;
-$rem-2: 0.5rem;
-$rem-3: 1rem;
-$rem-4: 2rem;
-$rem-5: 4rem;
+$rem-xs: 0.25rem;
+$rem-sm: 0.5rem;
+$rem-md: 1rem;
+$rem-lg: 2rem;
+$rem-xl: 4rem;
+
+// 画面サイズ
+$screen-mobile: 640px;
+$screen-middle: 768px;
+$screen-large: 1024px;
+$screen-xlarge: 1280px;
