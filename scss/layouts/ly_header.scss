@@ -1,0 +1,12 @@
+/*
+ヘッダー部分のスタイル定義
+*/
+
+@use "../foundation";
+
+/*
+ヘッダー部分
+*/
+.ly_header {
+    margin-bottom: foundation.$space-abs-md;
+}
