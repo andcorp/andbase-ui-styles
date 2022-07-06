@@ -11,4 +11,6 @@
     display: flex;
     flex-direction: row;
     padding: v.$space-abs-sm;
+
+    border-bottom: v.$border-separator-thin;
 }
