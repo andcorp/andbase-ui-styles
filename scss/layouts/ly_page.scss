@@ -1,0 +1,22 @@
+/*
+ページのスタイル定義
+*/
+
+@use "../foundation";
+
+/*
+ページ
+*/
+.ly_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*
+    ページ内容
+    */
+    .ly_page_inner {
+        flex: 1;
+        max-width: foundation.$size-screen-large;
+    }
+}
