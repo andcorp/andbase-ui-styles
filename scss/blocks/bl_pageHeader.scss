@@ -1,0 +1,14 @@
+/*
+ページヘッダーブロックのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ページヘッダー
+*/
+.bl_pageHeader {
+    display: flex;
+    flex-direction: row;
+    padding: v.$space-abs-sm;
+}

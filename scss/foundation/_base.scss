@@ -2,10 +2,10 @@
 基本的なタグに対する定義
 */
 
-@use "color";
+@use "../variables" as v;
 
 html, body {
-    background-color: color.$main-background;
-    color: color.$main-text;
+    background-color: v.$color-main-background;
+    color: v.$color-main-text;
     height: 100%;
 }

@@ -2,11 +2,11 @@
 ヘッダー部分のスタイル定義
 */
 
-@use "../foundation";
+@use "../variables" as v;
 
 /*
 ヘッダー部分
 */
 .ly_header {
-    margin-bottom: foundation.$space-abs-md;
+    margin-bottom: v.$space-abs-md;
 }
