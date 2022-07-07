@@ -10,6 +10,7 @@
 .el_anchor {
     color: v.$color-anchor-text;
     text-decoration: none;
+    cursor: pointer;
 
     // ホバー時に下線を引く。
     &:hover {
