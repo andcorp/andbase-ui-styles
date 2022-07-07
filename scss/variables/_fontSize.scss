@@ -1,0 +1,11 @@
+/**
+フォントサイズ定義
+*/
+
+@use "./size";
+
+$xs: size.$rem-xs;
+$sm: size.$rem-sm;
+$md: size.$rem-md;
+$lg: size.$rem-lg;
+$xl: size.$rem-xl;
