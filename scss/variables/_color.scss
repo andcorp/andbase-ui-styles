@@ -4,7 +4,8 @@
 
 @use "palette";
 
-$main-background: palette.$tranquil;
+$main-background: palette.$azure;
+$sub-background: palette.$tranquil;
 $main-text: palette.$prussian-blue;
 $anchor-text: palette.$dodger-blue;
 $visited-anchor-text: palette.$blue-violet;
