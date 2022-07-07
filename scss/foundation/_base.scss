@@ -10,8 +10,17 @@ html, body {
     height: 100%;
 }
 
+// アンカー要素リセット
 a {
     cursor: inherit;
     text-decoration: none;
     color: inherit;
+}
+
+// 見出し要素リセット
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: v.$font-size-md;
+    margin: 0;
+    line-height: 1em;
 }

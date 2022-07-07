@@ -1,0 +1,64 @@
+/*
+見出し要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+見出し要素
+*/
+.el_heading {
+    /*
+    見出しレベル1
+    */
+    &.el_heading__h1 {
+        font-weight: bold;
+        font-size: v.$font-size-xl;
+        padding-bottom: v.$space-abs-md;
+    }
+
+    /*
+    見出しレベル2
+    */
+    &.el_heading__h2 {
+        font-weight: bold;
+        font-size: v.$font-size-lg;
+        padding-bottom: v.$space-abs-md;
+    }
+
+    /*
+    見出しレベル3
+    */
+    &.el_heading__h3 {
+        font-weight: normal;
+        font-size: v.$font-size-md;
+        padding-bottom: v.$space-abs-sm;
+    }
+
+    /*
+    見出しレベル4
+    */
+    &.el_heading__h4 {
+        font-weight: normal;
+        font-size: v.$font-size-md;
+        padding-bottom: v.$space-abs-sm;
+    }
+
+    /*
+    見出しレベル5
+    */
+    &.el_heading__h5 {
+        font-weight: normal;
+        font-size: v.$font-size-md;
+        padding-bottom: v.$space-abs-sm;
+    }
+
+    /*
+    見出しレベル6
+    */
+    &.el_heading__h6 {
+        font-weight: normal;
+        font-size: v.$font-size-md;
+        padding-bottom: v.$space-abs-sm;
+    }
+}
