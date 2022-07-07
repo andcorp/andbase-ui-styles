@@ -9,3 +9,9 @@ html, body {
     color: v.$color-main-text;
     height: 100%;
 }
+
+a {
+    cursor: inherit;
+    text-decoration: none;
+    color: inherit;
+}

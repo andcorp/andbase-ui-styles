@@ -8,9 +8,18 @@
 アンカー要素
 */
 .el_anchor {
-    color: v.$color-anchor-text;
     text-decoration: none;
     cursor: pointer;
+
+    // 未訪問時
+    &:link {
+        color: v.$color-anchor-text;
+    }
+
+    // 訪問済み時
+    &:visited {
+        color: v.$color-visited-anchor-text;
+    }
 
     // ホバー時に下線を引く。
     &:hover {
