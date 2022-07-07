@@ -1,0 +1,18 @@
+/*
+アンカー要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+アンカー要素
+*/
+.el_anchor {
+    color: v.$color-anchor-text;
+    text-decoration: none;
+
+    // ホバー時に下線を引く。
+    &:hover {
+        text-decoration: underline;
+    }
+}
