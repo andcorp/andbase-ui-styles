@@ -1,0 +1,12 @@
+/*
+フッター部分のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+フッター部分
+*/
+.ly_footer {
+    margin-top: v.$space-abs-md;
+}
