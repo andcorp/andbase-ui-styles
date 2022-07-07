@@ -1,0 +1,12 @@
+/*
+ヘッダー部分のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ヘッダー部分
+*/
+.ly_header {
+    margin-bottom: v.$space-abs-md;
+}

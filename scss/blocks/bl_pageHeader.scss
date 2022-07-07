@@ -1,0 +1,35 @@
+/*
+ページヘッダーブロックのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ページヘッダー
+*/
+.bl_pageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: v.$space-abs-sm;
+
+    border-bottom: v.$border-separator-thin;
+
+    /*
+    ページヘッダー項目
+    */
+    .bl_pageHeader_item {
+        margin-left: v.$space-abs-sm;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        /*
+        伸長項目
+        */
+        &.bl_pageHeader_item__grow {
+            flex: 1;
+        }
+    }
+}

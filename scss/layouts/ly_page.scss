@@ -2,7 +2,7 @@
 ページのスタイル定義
 */
 
-@use "../foundation";
+@use "../variables" as v;
 
 /*
 ページ
@@ -17,6 +17,6 @@
     */
     .ly_page_inner {
         flex: 1;
-        max-width: foundation.$size-screen-large;
+        max-width: v.$size-screen-large;
     }
 }

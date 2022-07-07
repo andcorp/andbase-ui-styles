@@ -1,0 +1,12 @@
+/*
+罫線定義
+*/
+
+@use "./size";
+@use "./color";
+
+// 罫線サイズ
+$width-thin: size.$abs-minimum;
+
+// 罫線定義
+$separator-thin: solid $width-thin color.$separator-border;

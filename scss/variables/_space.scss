@@ -1,0 +1,19 @@
+/*
+空白サイズ定義
+*/
+
+@use "./size";
+
+// 絶対値定義
+$abs-xs: size.$abs-xs;
+$abs-sm: size.$abs-sm;
+$abs-md: size.$abs-md;
+$abs-lg: size.$abs-lg;
+$abs-xl: size.$abs-xl;
+
+// 文字との相対値定義
+$rem-xs: size.$rem-xs;
+$rem-sm: size.$rem-sm;
+$rem-md: size.$rem-md;
+$rem-lg: size.$rem-lg;
+$rem-xl: size.$rem-xl;
