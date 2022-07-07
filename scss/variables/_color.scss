@@ -4,9 +4,20 @@
 
 @use "palette";
 
+// メイン部分
 $main-background: palette.$azure;
-$sub-background: palette.$tranquil;
 $main-text: palette.$prussian-blue;
+
+// サブ部分
+$sub-background: palette.$tranquil;
+
+// 反対色部分
+$opposite-background: palette.$atomic;
+$opposite-text: palette.$tranquil;
+
+// リンク
 $anchor-text: palette.$dodger-blue;
 $visited-anchor-text: palette.$blue-violet;
+
+// 区切り線
 $separator-border: palette.$link-water;

@@ -1,0 +1,36 @@
+/*
+ページフッターブロックのスタイル定義
+*/
+@use "../variables" as v;
+
+/*
+ページフッター
+*/
+.bl_pageFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: v.$space-abs-sm;
+    background-color: v.$color-opposite-background;
+    color: v.$color-opposite-text;
+
+    border-bottom: v.$border-separator-thin;
+
+    /*
+    ページフッター項目
+    */
+    .bl_pageFooter_item {
+        margin-left: v.$space-abs-sm;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        /*
+        伸長項目
+        */
+        &.bl_pageFooter_item__grow {
+            flex: 1;
+        }
+    }
+}
