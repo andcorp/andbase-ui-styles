@@ -1,0 +1,28 @@
+/*
+アンカー要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+アンカー要素
+*/
+.el_anchor {
+    text-decoration: none;
+    cursor: pointer;
+
+    // 未訪問時
+    &:link {
+        color: v.$color-anchor-text;
+    }
+
+    // 訪問済み時
+    &:visited {
+        color: v.$color-visited-anchor-text;
+    }
+
+    // ホバー時に下線を引く。
+    &:hover {
+        text-decoration: underline;
+    }
+}
