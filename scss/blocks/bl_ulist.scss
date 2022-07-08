@@ -8,10 +8,15 @@
 順序無しリスト
 */
 .bl_ulist {
+    padding: 0;
+    margin: 0;
+
     /*
     順序無しリスト項目
     */
     .bl_ulist_item {
+        list-style-type: none;
+
         // HTML読み上げ対応のためにサイズ0空白を入れる。
         // https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type#accessibility_concerns
         &::before {
@@ -20,16 +25,17 @@
     }
 
     // 記号あり時
-    &.bl_ulist__disc .bl_ulist_item {
-        &::before {
-            content: "\2022";
-            padding-right: v.$space-rem-sm;
+    &.bl_ulist__disc {
+        padding-left: 1.5em;
+
+        .bl_ulist_item {
+            list-style-type: disc;
         }
     }
 
     // 入れ子リストのマージン設定
     & & {
-        margin-left: v.$space-rem-md;
+        margin-left: v.$space-rem-lg;
     }
 
     /*
