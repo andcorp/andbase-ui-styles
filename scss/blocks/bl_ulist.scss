@@ -1,0 +1,50 @@
+/*
+順序無しリストのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+順序無しリスト
+*/
+.bl_ulist {
+    /*
+    順序無しリスト項目
+    */
+    .bl_ulist_item {
+        // HTML読み上げ対応のためにサイズ0空白を入れる。
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type#accessibility_concerns
+        &::before {
+            content: "\200B";
+        }
+    }
+
+    // 記号あり時
+    &.bl_ulist__disc .bl_ulist_item {
+        &::before {
+            content: "\2022";
+            padding-right: v.$space-rem-sm;
+        }
+    }
+
+    // 入れ子リストのマージン設定
+    & & {
+        margin-left: v.$space-rem-md;
+    }
+
+    /*
+    水平リスト
+    */
+    &.bl_ulist__horizontal {
+        display: flex;
+        flex-direction: row;
+
+        .bl_ulist_item {
+            margin-left: v.$space-abs-md;
+        }
+        
+        .bl_ulist_item:first-child {
+            margin-left: 0;
+        }
+    }
+}
