@@ -12,6 +12,8 @@
     順序無しリスト項目
     */
     .bl_ulist_item {
+        // HTML読み上げ対応のためにサイズ0空白を入れる。
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type#accessibility_concerns
         &::before {
             content: "\200B";
         }
@@ -28,5 +30,21 @@
     // 入れ子リストのマージン設定
     & & {
         margin-left: v.$space-rem-md;
+    }
+
+    /*
+    水平リスト
+    */
+    &.bl_ulist__horizontal {
+        display: flex;
+        flex-direction: row;
+
+        .bl_ulist_item {
+            margin-left: v.$space-abs-md;
+        }
+        
+        .bl_ulist_item:first-child {
+            margin-left: 0;
+        }
     }
 }
