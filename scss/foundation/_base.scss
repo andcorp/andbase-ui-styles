@@ -24,3 +24,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     line-height: 1em;
 }
+
+    // リスト表示内容リセット
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
