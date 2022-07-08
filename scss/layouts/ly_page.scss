@@ -13,6 +13,13 @@
     justify-content: center;
 
     /*
+    高さ最大まで伸ばす。
+    */
+    &.ly_page__grow {
+        flex: 1;
+    }
+
+    /*
     ページ内容
     */
     .ly_page_inner {
