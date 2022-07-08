@@ -1,0 +1,21 @@
+/*
+ページルートのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ページルート
+*/
+.ly_pageRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    /*
+    高さ最大まで伸ばす。
+    */
+    &.ly_pageRoot__stretch {
+        height: 100%;
+    }
+}
