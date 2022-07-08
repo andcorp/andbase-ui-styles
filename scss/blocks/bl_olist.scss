@@ -1,0 +1,24 @@
+/*
+番号付きリストのスタイル定義
+*/
+@use "../variables" as v;
+
+/*
+番号付きリスト
+*/
+.bl_olist {
+    padding: 0;
+    margin: 0;
+
+    /*
+    番号付きリスト項目
+    */
+    .bl_olist_item {
+        margin-left: 1.25em;
+    }
+
+    // 入れ子リストのマージン設定
+    & & {
+        margin-left: v.$space-rem-md;
+    }
+}
