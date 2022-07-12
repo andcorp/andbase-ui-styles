@@ -25,21 +25,21 @@ $separator-border: palette.$link-water;
 
 // テーマカラー
 $primary: palette.$dodger-blue;
-$primary-back: color.adjust($primary, $lightness: 40%);
+$primary-background: color.adjust($primary, $lightness: 40%);
 $primary-text: color.adjust($primary, $lightness: -20%);
 
 $secondary: palette.$slate-grey;
-$secondary-back: color.adjust($secondary, $lightness: 40%);
+$secondary-background: color.adjust($secondary, $lightness: 40%);
 $secondary-text: color.adjust($secondary, $lightness: -20%);
 
 $success: palette.$dark-pastel-green;
-$success-back: color.adjust($success, $lightness: 40%);
+$success-background: color.adjust($success, $lightness: 40%);
 $success-text: color.adjust($success, $lightness: -20%);
 
 $warning: palette.$sunglow;
-$warning-back: color.adjust($warning, $lightness: 20%);
+$warning-background: color.adjust($warning, $lightness: 20%);
 $warning-text: color.adjust($warning, $lightness: -40%);
 
 $danger: palette.$bittersweet;
-$danger-back: color.adjust($danger, $lightness: 20%);
+$danger-background: color.adjust($danger, $lightness: 20%);
 $danger-text: color.adjust($danger, $lightness: -40%);
