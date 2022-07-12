@@ -1,0 +1,14 @@
+/*
+メッセージ
+*/
+
+@use "../variables" as v;
+
+/*
+メッセージ
+*/
+.bl_message {
+    border-radius: v.$border-radius-abs-sm;
+    padding: v.$space-abs-md;
+    background: v.$color-sub-background;
+}
