@@ -44,6 +44,17 @@ $textMap: (
 );
 
 /*
+テーマカラー反対色テキスト色
+*/
+$oppositeTextMap: (
+    "recommend": v.$color-recommend-opposite-text,
+    "review": v.$color-review-opposite-text,
+    "fresh": v.$color-fresh-opposite-text,
+    "warning": v.$color-warning-opposite-text,
+    "danger": v.$color-danger-opposite-text,
+);
+
+/*
 テーマカラー修飾子追加mixin
 */
 @mixin modifiers($prefix) {

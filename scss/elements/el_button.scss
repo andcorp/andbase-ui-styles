@@ -33,7 +33,7 @@
 
         &.el_button__#{$themeColor} {
             background: $background;
-            color: v.$color-opposite-text;
+            color: map.get(u.$theme-color-oppositeTextMap, $themeColor);
 
             &:hover {
                 background: color.adjust($background, $saturation: -3%, $lightness: -3%);
