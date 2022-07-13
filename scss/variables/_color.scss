@@ -3,6 +3,7 @@
 */
 
 @use "palette";
+@use "sass:color";
 
 // メイン部分
 $main-background: palette.$azure;
@@ -21,3 +22,24 @@ $visited-anchor-text: palette.$blue-violet;
 
 // 区切り線
 $separator-border: palette.$link-water;
+
+// テーマカラー
+$recommend: palette.$dodger-blue;
+$recommend-background: color.adjust($recommend, $lightness: 40%);
+$recommend-text: color.adjust($recommend, $lightness: -20%);
+
+$review: palette.$slate-grey;
+$review-background: color.adjust($review, $lightness: 40%);
+$review-text: color.adjust($review, $lightness: -20%);
+
+$fresh: palette.$dark-pastel-green;
+$fresh-background: color.adjust($fresh, $lightness: 40%);
+$fresh-text: color.adjust($fresh, $lightness: -20%);
+
+$warning: palette.$sunglow;
+$warning-background: color.adjust($warning, $lightness: 20%);
+$warning-text: color.adjust($warning, $lightness: -40%);
+
+$danger: palette.$bittersweet;
+$danger-background: color.adjust($danger, $lightness: 20%);
+$danger-text: color.adjust($danger, $lightness: -40%);

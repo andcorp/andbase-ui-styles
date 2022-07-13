@@ -1,0 +1,17 @@
+/*
+メッセージ
+*/
+
+@use "../variables" as v;
+@use "../utilities" as u;
+
+/*
+メッセージ
+*/
+.bl_message {
+    border-radius: v.$border-radius-abs-sm;
+    padding: v.$space-abs-md;
+    background: v.$color-sub-background;
+
+    @include u.themeColorModifiers("bl_message")
+}
