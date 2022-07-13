@@ -23,6 +23,9 @@ $visited-anchor-text: palette.$blue-violet;
 // 区切り線
 $separator-border: palette.$link-water;
 
+// 影
+$shadow: color.adjust(palette.$link-water, $alpha: -0.25);
+
 // テーマカラー
 $recommend: palette.$dodger-blue;
 $recommend-background: color.adjust($recommend, $lightness: 40%);
