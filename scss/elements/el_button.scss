@@ -1,3 +1,47 @@
 /*
 ボタン要素のスタイル定義
 */
+
+@use "../variables" as v;
+@use "../utilities" as u;
+@use "sass:color";
+@use "sass:map";
+
+/*
+ボタン要素スタイル
+*/
+.el_button {
+    display: inline-block;
+    font-size: v.$font-size-md;
+    border-radius: v.$border-radius-abs-sm;
+    padding: v.$space-abs-sm;
+    box-shadow: v.$box-shadow-pressable;
+
+    color: v.$color-main-text;
+    background: v.$color-sub-background;
+
+    &:hover {
+        background: color.adjust(v.$color-sub-background, $saturation: -3%, $lightness: -3%);
+    }
+
+    &:active {
+        box-shadow: v.$box-shadow-pressed;
+    }
+
+    @each $themeColor in u.$theme-color-names {
+        $background: map.get(u.$theme-color-map, $themeColor);
+
+        &.el_button__#{$themeColor} {
+            background: $background;
+            color: v.$color-opposite-text;
+
+            &:hover {
+                background: color.adjust($background, $saturation: -3%, $lightness: -3%);
+            }
+
+            &:active {
+                box-shadow: v.$box-shadow-pressed;
+            }
+        }
+    }
+}

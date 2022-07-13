@@ -14,5 +14,5 @@
     color: v.$color-main-text;
     background: v.$color-sub-background;
 
-    @include u.themeColorModifiers("bl_message")
+    @include u.theme-color-modifiers("bl_message")
 }

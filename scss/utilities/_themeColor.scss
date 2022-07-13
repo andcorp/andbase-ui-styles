@@ -8,12 +8,23 @@
 /*
 テーマカラー名
 */
-$themeColors: "recommend", "review", "fresh", "warning", "danger";
+$names: "recommend", "review", "fresh", "warning", "danger";
+
+/*
+テーマカラー色
+*/
+$map: (
+    "recommend": v.$color-recommend,
+    "review": v.$color-review,
+    "fresh": v.$color-fresh,
+    "warning": v.$color-warning,
+    "danger": v.$color-danger,
+);
 
 /*
 テーマカラー背景色
 */
-$themeColorBackgroundMap: (
+$backgroundMap: (
     "recommend": v.$color-recommend-background,
     "review": v.$color-review-background,
     "fresh": v.$color-fresh-background,
@@ -24,7 +35,7 @@ $themeColorBackgroundMap: (
 /*
 テーマカラーテキスト色
 */
-$themeColorTextMap: (
+$textMap: (
     "recommend": v.$color-recommend-text,
     "review": v.$color-review-text,
     "fresh": v.$color-fresh-text,
@@ -35,11 +46,11 @@ $themeColorTextMap: (
 /*
 テーマカラー修飾子追加mixin
 */
-@mixin themeColorModifiers($prefix) {
-    @each $themeColor in $themeColors {
-        &.#{$prefix}__#{$themeColor} {
-            background: map.get($themeColorBackgroundMap, $themeColor);
-            color: map.get($themeColorTextMap, $themeColor);
+@mixin modifiers($prefix) {
+    @each $name in $names {
+        &.#{$prefix}__#{$name} {
+            background: map.get($backgroundMap, $name);
+            color: map.get($textMap, $name);
         }
     }
 }
