@@ -3,6 +3,7 @@
 */
 
 @use "../variables" as v;
+@use "../utilities" as u;
 
 /*
 メッセージ
@@ -11,4 +12,6 @@
     border-radius: v.$border-radius-abs-sm;
     padding: v.$space-abs-md;
     background: v.$color-sub-background;
+
+    @include u.themeColorModifiers("bl_message")
 }
