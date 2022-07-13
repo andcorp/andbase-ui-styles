@@ -30,19 +30,24 @@ $shadow: palette.$slate-grey;
 $recommend: palette.$dodger-blue;
 $recommend-background: color.adjust($recommend, $lightness: 40%);
 $recommend-text: color.adjust($recommend, $lightness: -20%);
+$recommend-opposite-text: $opposite-text;
 
 $review: palette.$slate-grey;
 $review-background: color.adjust($review, $lightness: 40%);
 $review-text: color.adjust($review, $lightness: -20%);
+$review-opposite-text: $opposite-text;
 
-$fresh: palette.$dark-pastel-green;
+$fresh: palette.$eucalyptus;
 $fresh-background: color.adjust($fresh, $lightness: 40%);
 $fresh-text: color.adjust($fresh, $lightness: -20%);
+$fresh-opposite-text: $opposite-text;
 
 $warning: palette.$sunglow;
 $warning-background: color.adjust($warning, $lightness: 20%);
 $warning-text: color.adjust($warning, $lightness: -40%);
+$warning-opposite-text: $warning-text;
 
-$danger: palette.$bittersweet;
-$danger-background: color.adjust($danger, $lightness: 20%);
+$danger: palette.$scarlet;
+$danger-background: color.adjust($danger, $lightness: 30%);
 $danger-text: color.adjust($danger, $lightness: -40%);
+$danger-opposite-text: $opposite-text;
