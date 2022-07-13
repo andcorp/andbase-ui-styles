@@ -11,6 +11,7 @@
 .bl_message {
     border-radius: v.$border-radius-abs-sm;
     padding: v.$space-abs-md;
+    color: v.$color-main-text;
     background: v.$color-sub-background;
 
     @include u.themeColorModifiers("bl_message")
