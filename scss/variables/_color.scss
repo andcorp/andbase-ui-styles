@@ -24,17 +24,17 @@ $visited-anchor-text: palette.$blue-violet;
 $separator-border: palette.$link-water;
 
 // テーマカラー
-$primary: palette.$dodger-blue;
-$primary-background: color.adjust($primary, $lightness: 40%);
-$primary-text: color.adjust($primary, $lightness: -20%);
+$recommend: palette.$dodger-blue;
+$recommend-background: color.adjust($recommend, $lightness: 40%);
+$recommend-text: color.adjust($recommend, $lightness: -20%);
 
-$secondary: palette.$slate-grey;
-$secondary-background: color.adjust($secondary, $lightness: 40%);
-$secondary-text: color.adjust($secondary, $lightness: -20%);
+$review: palette.$slate-grey;
+$review-background: color.adjust($review, $lightness: 40%);
+$review-text: color.adjust($review, $lightness: -20%);
 
-$success: palette.$dark-pastel-green;
-$success-background: color.adjust($success, $lightness: 40%);
-$success-text: color.adjust($success, $lightness: -20%);
+$fresh: palette.$dark-pastel-green;
+$fresh-background: color.adjust($fresh, $lightness: 40%);
+$fresh-text: color.adjust($fresh, $lightness: -20%);
 
 $warning: palette.$sunglow;
 $warning-background: color.adjust($warning, $lightness: 20%);

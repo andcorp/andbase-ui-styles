@@ -1,0 +1,45 @@
+/*
+テーマカラー追加mixin
+*/
+
+@use "sass:map";
+@use "../variables" as v;
+
+/*
+テーマカラー名
+*/
+$themeColors: "recommend", "review", "fresh", "warning", "danger";
+
+/*
+テーマカラー背景色
+*/
+$themeColorBackgroundMap: (
+    "recommend": v.$color-recommend-background,
+    "review": v.$color-review-background,
+    "fresh": v.$color-fresh-background,
+    "warning": v.$color-warning-background,
+    "danger": v.$color-danger-background,
+);
+
+/*
+テーマカラーテキスト色
+*/
+$themeColorTextMap: (
+    "recommend": v.$color-recommend-text,
+    "review": v.$color-review-text,
+    "fresh": v.$color-fresh-text,
+    "warning": v.$color-warning-text,
+    "danger": v.$color-danger-text,
+);
+
+/*
+テーマカラー修飾子追加mixin
+*/
+@mixin themeColorModifiers($prefix) {
+    @each $themeColor in $themeColors {
+        &.#{$prefix}__#{$themeColor} {
+            background: map.get($themeColorBackgroundMap, $themeColor);
+            color: map.get($themeColorTextMap, $themeColor);
+        }
+    }
+}
