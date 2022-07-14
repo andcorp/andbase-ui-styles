@@ -32,10 +32,10 @@ $recommend-background: color.adjust($recommend, $lightness: 40%);
 $recommend-text: color.adjust($recommend, $lightness: -20%);
 $recommend-opposite-text: $opposite-text;
 
-$review: palette.$slate-grey;
-$review-background: color.adjust($review, $lightness: 40%);
-$review-text: color.adjust($review, $lightness: -20%);
-$review-opposite-text: $opposite-text;
+$review: palette.$solitude;
+$review-background: $review;
+$review-text: $main-text;
+$review-opposite-text: $main-text;
 
 $fresh: palette.$eucalyptus;
 $fresh-background: color.adjust($fresh, $lightness: 40%);
