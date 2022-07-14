@@ -28,13 +28,21 @@
         box-shadow: v.$box-shadow-pressed;
     }
 
+    &:disabled {
+        color: color.adjust(v.$color-main-text, $saturation: -50%, $lightness: 50%);
+        background: color.adjust(v.$color-sub-background, $lightness: 33%);
+        box-shadow: none;
+        border: v.$border-separator-thin;
+    }
+
     // 各テーマカラーの設定
     @each $themeColor in u.$theme-color-names {
         $background: map.get(u.$theme-color-map, $themeColor);
+        $text-color: map.get(u.$theme-color-oppositeTextMap, $themeColor);
 
         &.el_button__#{$themeColor} {
             background: $background;
-            color: map.get(u.$theme-color-oppositeTextMap, $themeColor);
+            color: $text-color;
 
             &:hover {
                 background: color.adjust($background, $saturation: -3%, $lightness: -3%);
@@ -42,6 +50,13 @@
 
             &:active {
                 box-shadow: v.$box-shadow-pressed;
+            }
+
+            &:disabled {
+                color: color.adjust($text-color, $saturation: -30%, $lightness: 30%);
+                background: color.adjust($background, $lightness: 33%);
+                box-shadow: none;
+                border: v.$border-separator-thin;
             }
         }
     }
