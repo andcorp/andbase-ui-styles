@@ -22,6 +22,17 @@ $map: (
 );
 
 /*
+テーマカラー無効色
+*/
+$disabledMap: (
+    "recommend": v.$color-recommend-disabled,
+    "review": v.$color-review-disabled,
+    "fresh": v.$color-fresh-disabled,
+    "warning": v.$color-warning-disabled,
+    "danger": v.$color-danger-disabled,
+);
+
+/*
 テーマカラー背景色
 */
 $backgroundMap: (
@@ -44,7 +55,7 @@ $textMap: (
 );
 
 /*
-テーマカラー反対色テキスト色
+テーマカラー反対テキスト色
 */
 $oppositeTextMap: (
     "recommend": v.$color-recommend-opposite-text,
@@ -52,6 +63,17 @@ $oppositeTextMap: (
     "fresh": v.$color-fresh-opposite-text,
     "warning": v.$color-warning-opposite-text,
     "danger": v.$color-danger-opposite-text,
+);
+
+/*
+テーマカラー反対無効テキスト色
+*/
+$oppositeDisabledTextMap: (
+    "recommend": v.$color-recommend-opposite-disabled-text,
+    "review": v.$color-review-opposite-disabled-text,
+    "fresh": v.$color-fresh-opposite-disabled-text,
+    "warning": v.$color-warning-opposite-disabled-text,
+    "danger": v.$color-danger-opposite-disabled-text,
 );
 
 /*

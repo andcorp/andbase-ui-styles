@@ -8,9 +8,11 @@
 // メイン部分
 $main-background: palette.$azure;
 $main-text: palette.$prussian-blue;
+$main-disabled-text: color.adjust($main-text, $saturation: -100%, $lightness: 50%);
 
 // サブ部分
 $sub-background: palette.$tranquil;
+$sub-disabled: color.adjust($sub-background, $lightness: 33%);
 
 // 反対色部分
 $opposite-background: palette.$atomic;
@@ -28,26 +30,36 @@ $shadow: palette.$slate-grey;
 
 // テーマカラー
 $recommend: palette.$dodger-blue;
+$recommend-disabled: color.adjust($recommend, $lightness: 33%);
 $recommend-background: color.adjust($recommend, $lightness: 40%);
 $recommend-text: color.adjust($recommend, $lightness: -20%);
 $recommend-opposite-text: $opposite-text;
+$recommend-opposite-disabled-text: color.adjust($recommend-opposite-text, $saturation: -30%, $lightness: 30%);
 
 $review: palette.$solitude;
+$review-disabled: color.adjust($review, $lightness: 33%);
 $review-background: $review;
 $review-text: $main-text;
 $review-opposite-text: $main-text;
+$review-opposite-disabled-text: color.adjust($review-opposite-text, $saturation: -100%, $lightness: 50%);
 
 $fresh: palette.$eucalyptus;
+$fresh-disabled: color.adjust($fresh, $lightness: 33%);
 $fresh-background: color.adjust($fresh, $lightness: 40%);
 $fresh-text: color.adjust($fresh, $lightness: -20%);
 $fresh-opposite-text: $opposite-text;
+$fresh-opposite-disabled-text: color.adjust($fresh-opposite-text, $saturation: -30%, $lightness: 30%);
 
 $warning: palette.$sunglow;
+$warning-disabled: color.adjust($warning, $lightness: 33%);
 $warning-background: color.adjust($warning, $lightness: 20%);
 $warning-text: color.adjust($warning, $lightness: -40%);
 $warning-opposite-text: $warning-text;
+$warning-opposite-disabled-text: color.adjust($warning-opposite-text, $saturation: -30%, $lightness: 30%);
 
 $danger: palette.$scarlet;
+$danger-disabled: color.adjust($danger, $lightness: 33%);
 $danger-background: color.adjust($danger, $lightness: 30%);
 $danger-text: color.adjust($danger, $lightness: -40%);
 $danger-opposite-text: $opposite-text;
+$danger-opposite-disabled-text: color.adjust($danger-opposite-text, $saturation: -30%, $lightness: 30%);
