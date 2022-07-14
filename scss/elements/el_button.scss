@@ -28,6 +28,7 @@
         box-shadow: v.$box-shadow-pressed;
     }
 
+    // 各テーマカラーの設定
     @each $themeColor in u.$theme-color-names {
         $background: map.get(u.$theme-color-map, $themeColor);
 
