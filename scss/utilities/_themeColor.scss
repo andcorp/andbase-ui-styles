@@ -8,12 +8,34 @@
 /*
 テーマカラー名
 */
-$themeColors: "recommend", "review", "fresh", "warning", "danger";
+$names: "recommend", "review", "fresh", "warning", "danger";
+
+/*
+テーマカラー色
+*/
+$map: (
+    "recommend": v.$color-recommend,
+    "review": v.$color-review,
+    "fresh": v.$color-fresh,
+    "warning": v.$color-warning,
+    "danger": v.$color-danger,
+);
+
+/*
+テーマカラー無効色
+*/
+$disabledMap: (
+    "recommend": v.$color-recommend-disabled,
+    "review": v.$color-review-disabled,
+    "fresh": v.$color-fresh-disabled,
+    "warning": v.$color-warning-disabled,
+    "danger": v.$color-danger-disabled,
+);
 
 /*
 テーマカラー背景色
 */
-$themeColorBackgroundMap: (
+$backgroundMap: (
     "recommend": v.$color-recommend-background,
     "review": v.$color-review-background,
     "fresh": v.$color-fresh-background,
@@ -24,7 +46,7 @@ $themeColorBackgroundMap: (
 /*
 テーマカラーテキスト色
 */
-$themeColorTextMap: (
+$textMap: (
     "recommend": v.$color-recommend-text,
     "review": v.$color-review-text,
     "fresh": v.$color-fresh-text,
@@ -33,13 +55,35 @@ $themeColorTextMap: (
 );
 
 /*
+テーマカラー反対テキスト色
+*/
+$oppositeTextMap: (
+    "recommend": v.$color-recommend-opposite-text,
+    "review": v.$color-review-opposite-text,
+    "fresh": v.$color-fresh-opposite-text,
+    "warning": v.$color-warning-opposite-text,
+    "danger": v.$color-danger-opposite-text,
+);
+
+/*
+テーマカラー反対無効テキスト色
+*/
+$oppositeDisabledTextMap: (
+    "recommend": v.$color-recommend-opposite-disabled-text,
+    "review": v.$color-review-opposite-disabled-text,
+    "fresh": v.$color-fresh-opposite-disabled-text,
+    "warning": v.$color-warning-opposite-disabled-text,
+    "danger": v.$color-danger-opposite-disabled-text,
+);
+
+/*
 テーマカラー修飾子追加mixin
 */
-@mixin themeColorModifiers($prefix) {
-    @each $themeColor in $themeColors {
-        &.#{$prefix}__#{$themeColor} {
-            background: map.get($themeColorBackgroundMap, $themeColor);
-            color: map.get($themeColorTextMap, $themeColor);
+@mixin modifiers($prefix) {
+    @each $name in $names {
+        &.#{$prefix}__#{$name} {
+            background: map.get($backgroundMap, $name);
+            color: map.get($textMap, $name);
         }
     }
 }

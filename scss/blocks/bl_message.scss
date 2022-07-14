@@ -1,5 +1,5 @@
 /*
-メッセージ
+メッセージのスタイル定義
 */
 
 @use "../variables" as v;
@@ -11,7 +11,8 @@
 .bl_message {
     border-radius: v.$border-radius-abs-sm;
     padding: v.$space-abs-md;
+    color: v.$color-main-text;
     background: v.$color-sub-background;
 
-    @include u.themeColorModifiers("bl_message")
+    @include u.theme-color-modifiers("bl_message")
 }

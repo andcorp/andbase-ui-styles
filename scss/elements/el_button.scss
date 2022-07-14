@@ -1,0 +1,63 @@
+/*
+ボタン要素のスタイル定義
+*/
+
+@use "../variables" as v;
+@use "../utilities" as u;
+@use "sass:color";
+@use "sass:map";
+
+/*
+ボタン要素スタイル
+*/
+.el_button {
+    display: inline-block;
+    font-size: v.$font-size-md;
+    border-radius: v.$border-radius-abs-sm;
+    padding: v.$space-abs-sm;
+    box-shadow: v.$box-shadow-pressable;
+
+    color: v.$color-main-text;
+    background: v.$color-sub-background;
+
+    &:hover {
+        background: color.adjust(v.$color-sub-background, $saturation: -3%, $lightness: -3%);
+    }
+
+    &:active {
+        box-shadow: v.$box-shadow-pressed;
+    }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-disabled;
+        box-shadow: v.$box-shadow-disabled;
+    }
+
+    // 各テーマカラーの設定
+    @each $themeColor in u.$theme-color-names {
+        $background: map.get(u.$theme-color-map, $themeColor);
+        $disabled-background: map.get(u.$theme-color-disabledMap, $themeColor);
+        $text-color: map.get(u.$theme-color-oppositeTextMap, $themeColor);
+        $disabled-text-color: map.get(u.$theme-color-oppositeDisabledTextMap, $themeColor);
+
+        &.el_button__#{$themeColor} {
+            background: $background;
+            color: $text-color;
+
+            &:hover {
+                background: color.adjust($background, $saturation: -3%, $lightness: -3%);
+            }
+
+            &:active {
+                box-shadow: v.$box-shadow-pressed;
+            }
+
+            &:disabled {
+                color: $disabled-text-color;
+                background: $disabled-background;
+                box-shadow: v.$box-shadow-disabled;
+            }
+        }
+    }
+}

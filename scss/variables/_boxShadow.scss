@@ -1,0 +1,15 @@
+/*
+ボックスシャドウ定義
+*/
+
+@use "./size";
+@use "./color";
+
+// 押下可能なものに対するボックスシャドウ
+$pressable: size.$abs-minimum size.$abs-minimum size.$abs-xs color.$shadow;
+
+// 押下状態のものに対するボックスシャドウ
+$pressed: 0 0 size.$abs-xxs color.$shadow;
+
+// 無効状態のものに対するボックスシャドウ
+$disabled: 0 0 size.$abs-xxs color.$shadow;
