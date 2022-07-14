@@ -1,0 +1,14 @@
+/*
+ナビゲーションリストのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ナビゲーションリスト
+*/
+.bl_navList {
+    display: flex;
+    flex-direction: row;
+    column-gap: v.$space-abs-md;
+}
