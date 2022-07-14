@@ -1,0 +1,14 @@
+/*
+ボタングループのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ボタングループ
+*/
+.bl_buttonGroup {
+    display: flex;
+    flex-direction: row;
+    column-gap: v.$space-abs-md;
+}
