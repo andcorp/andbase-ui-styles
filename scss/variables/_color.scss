@@ -28,6 +28,9 @@ $separator-border: palette.$link-water;
 // 影
 $shadow: palette.$slate-grey;
 
+// フォーカス色
+$focus: palette.$dodger-blue;
+
 // テーマカラー
 $recommend: palette.$dodger-blue;
 $recommend-disabled: color.adjust($recommend, $lightness: 33%);
