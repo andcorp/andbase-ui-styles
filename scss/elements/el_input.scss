@@ -9,6 +9,7 @@ input要素のスタイル定義
 input要素
 */
 .el_input {
+    display: inline-block;
     color: v.$color-main-text;
     border-radius: v.$border-radius-abs-xs;
     border: v.$border-separator-thin;
