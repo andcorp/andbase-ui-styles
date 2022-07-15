@@ -8,6 +8,7 @@
 // メイン部分
 $main-background: palette.$azure;
 $main-text: palette.$prussian-blue;
+$main-placeholder: color.adjust($main-text, $alpha: -0.6);
 $main-disabled-text: color.adjust($main-text, $saturation: -100%, $lightness: 50%);
 
 // サブ部分

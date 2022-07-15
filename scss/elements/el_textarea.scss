@@ -2,7 +2,6 @@
 textarea要素のスタイル定義
 */
 @use "../variables" as v;
-@use "sass:color";
 
 /*
 textarea要素
@@ -15,7 +14,7 @@ textarea要素
     padding: v.$space-abs-xs;
 
     &::placeholder {
-        color: color.adjust(v.$color-main-text, $alpha: -0.6);
+        color: v.$color-main-placeholder;
     }
 
     &:focus {
