@@ -22,4 +22,18 @@ input要素
     &:focus {
         box-shadow: v.$box-shadow-focused;
     }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-background;
+    }
+
+    &:read-only {
+        background: v.$color-sub-background;
+    }
+
+    &:invalid {
+        background: v.$color-invalid-background;
+        border: v.$border-invalid-thin;
+    }
 }
