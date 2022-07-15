@@ -1,0 +1,38 @@
+/*
+textarea要素のスタイル定義
+*/
+@use "../variables" as v;
+@use "sass:color";
+
+/*
+textarea要素
+*/
+.el_textarea {
+    display: inline-block;
+    color: v.$color-main-text;
+    border-radius: v.$border-radius-abs-xs;
+    border: v.$border-separator-thin;
+    padding: v.$space-abs-xs;
+
+    &::placeholder {
+        color: color.adjust(v.$color-main-text, $alpha: -0.6);
+    }
+
+    &:focus {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-background;
+    }
+
+    &:read-only {
+        background: v.$color-sub-background;
+    }
+
+    &:invalid {
+        background: v.$color-invalid-background;
+        border: v.$border-invalid-thin;
+    }
+}
