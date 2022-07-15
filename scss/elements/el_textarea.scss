@@ -9,6 +9,7 @@ textarea要素
 .el_textarea {
     display: inline-block;
     color: v.$color-main-text;
+    background: v.$color-main-background;
     border-radius: v.$border-radius-abs-xs;
     border: v.$border-separator-thin;
     padding: v.$space-abs-xs;
