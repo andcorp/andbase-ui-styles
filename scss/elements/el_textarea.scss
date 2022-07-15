@@ -35,4 +35,18 @@ textarea要素
         background: v.$color-invalid-background;
         border: v.$border-invalid-thin;
     }
+
+    // リサイズ設定
+    &.el_textarea__resizeNone {
+        resize: none;
+    }
+    &.el_textarea__resizeBoth {
+        resize: both;
+    }
+    &.el_textarea__resizeHorizontal {
+        resize: horizontal;
+    }
+    &.el_textarea__resizeVertical {
+        resize: vertical;
+    }
 }
