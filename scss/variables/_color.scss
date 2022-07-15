@@ -66,3 +66,7 @@ $danger-background: color.adjust($danger, $lightness: 30%);
 $danger-text: color.adjust($danger, $lightness: -40%);
 $danger-opposite-text: $opposite-text;
 $danger-opposite-disabled-text: color.adjust($danger-opposite-text, $saturation: -30%, $lightness: 30%);
+
+// 無効時の色
+$invalid: $danger;
+$invalid-background: color.adjust($danger, $lightness: 40%);
