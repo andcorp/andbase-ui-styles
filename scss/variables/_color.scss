@@ -8,6 +8,7 @@
 // メイン部分
 $main-background: palette.$azure;
 $main-text: palette.$prussian-blue;
+$main-placeholder: color.adjust($main-text, $alpha: -0.6);
 $main-disabled-text: color.adjust($main-text, $saturation: -100%, $lightness: 50%);
 
 // サブ部分
@@ -27,6 +28,9 @@ $separator-border: palette.$link-water;
 
 // 影
 $shadow: palette.$slate-grey;
+
+// フォーカス色
+$focus: palette.$dodger-blue;
 
 // テーマカラー
 $recommend: palette.$dodger-blue;
@@ -63,3 +67,7 @@ $danger-background: color.adjust($danger, $lightness: 30%);
 $danger-text: color.adjust($danger, $lightness: -40%);
 $danger-opposite-text: $opposite-text;
 $danger-opposite-disabled-text: color.adjust($danger-opposite-text, $saturation: -30%, $lightness: 30%);
+
+// 無効時の色
+$invalid: $danger;
+$invalid-background: color.adjust($danger, $lightness: 40%);

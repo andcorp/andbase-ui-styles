@@ -1,0 +1,39 @@
+/*
+input要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+input要素
+*/
+.el_input {
+    display: inline-block;
+    color: v.$color-main-text;
+    background: v.$color-main-background;
+    border-radius: v.$border-radius-abs-xs;
+    border: v.$border-separator-thin;
+    padding: v.$space-abs-xs;
+
+    &::placeholder {
+        color: v.$color-main-placeholder;
+    }
+
+    &:focus {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-background;
+    }
+
+    &:read-only {
+        background: v.$color-sub-background;
+    }
+
+    &:invalid {
+        background: v.$color-invalid-background;
+        border: v.$border-invalid-thin;
+    }
+}

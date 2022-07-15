@@ -10,3 +10,6 @@ $width-thin: size.$abs-minimum;
 
 // 罫線定義
 $separator-thin: solid $width-thin color.$separator-border;
+
+// 無効状態罫線定義
+$invalid-thin: solid $width-thin color.$invalid;

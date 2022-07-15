@@ -9,7 +9,10 @@
 $pressable: size.$abs-minimum size.$abs-minimum size.$abs-xs color.$shadow;
 
 // 押下状態のものに対するボックスシャドウ
-$pressed: 0 0 size.$abs-xxs color.$shadow;
+$pressed: 0 0 size.$abs-xxs 0 color.$shadow;
 
 // 無効状態のものに対するボックスシャドウ
-$disabled: 0 0 size.$abs-xxs color.$shadow;
+$disabled: 0 0 size.$abs-xxs 0 color.$shadow;
+
+// フォーカス状態のものに対するボックスシャドウ
+$focused: 0 0 size.$abs-xxs 0 color.$focus;
