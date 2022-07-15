@@ -1,0 +1,24 @@
+/*
+input要素のスタイル定義
+*/
+
+@use "../variables" as v;
+@use "sass:color";
+
+/*
+input要素
+*/
+.el_input {
+    color: v.$color-main-text;
+    border-radius: v.$border-radius-abs-xs;
+    border: v.$border-separator-thin;
+    padding: v.$space-abs-xs;
+
+    &::placeholder {
+        color: color.adjust(v.$color-main-text, $alpha: -0.6);
+    }
+
+    &:focus {
+        box-shadow: v.$box-shadow-focused;
+    }
+}
