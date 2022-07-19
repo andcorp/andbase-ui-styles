@@ -1,0 +1,12 @@
+/*
+ラベル要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ラベル要素
+*/
+.el_label {
+    font-size: v.$font-size-em-md;
+}
