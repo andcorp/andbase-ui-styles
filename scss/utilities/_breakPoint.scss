@@ -19,7 +19,7 @@ $map: (
 画面幅メディアクエリー
 */
 @mixin query-width($target) {
-    @media screen and (min-width: map-get($map, $target)) {
+    @media screen and (max-width: map-get($map, $target)) {
         @content;
     }
 }

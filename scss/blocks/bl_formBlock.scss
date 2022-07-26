@@ -3,6 +3,7 @@
 */
 
 @use "../variables" as v;
+@use "../utilities" as u;
 
 /*
 フォームブロック
@@ -20,6 +21,13 @@
         grid-template-columns: auto 1fr;
         row-gap: v.$space-abs-sm;
         column-gap: v.$space-abs-sm;
+
+        /**
+        モバイル時は1カラムに変更
+        */
+        @include u.break-point-query-width("mobile") {
+            grid-template-columns: 1fr;
+        }
     }
 
     /*
