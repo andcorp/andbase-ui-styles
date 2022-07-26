@@ -16,10 +16,19 @@ $map: (
 );
 
 /*
-メディアクエリー
+画面幅メディアクエリー
 */
-@mixin query($target) {
+@mixin query-width($target) {
     @media screen and (min-width: map-get($map, $target)) {
+        @content;
+    }
+}
+
+/*
+画面向きメディアクエリー
+*/
+@mixin query-orientation($target) {
+    @media screen and (orientation: $target) {
         @content;
     }
 }
