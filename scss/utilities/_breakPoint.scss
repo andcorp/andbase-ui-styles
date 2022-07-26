@@ -1,0 +1,25 @@
+/*
+ブレークポイントの定義
+*/
+
+@use "sass:map";
+@use "../variables" as v;
+
+/*
+ブレークポイント
+*/
+$map: (
+    "mobile": v.$size-screen-mobile,
+    "middle": v.$size-screen-middle,
+    "large": v.$size-screen-large,
+    "xlarge": v.$size-screen-xlarge,
+);
+
+/*
+メディアクエリー
+*/
+@mixin query($target) {
+    @media screen and (min-width: map-get($map, $target)) {
+        @content;
+    }
+}
