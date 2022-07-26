@@ -1,0 +1,49 @@
+/*
+チェックボックス要素のスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+チェックボックス要素
+*/
+.el_checkBox {
+    display: inline-block;
+    appearance: none;
+    position: relative;
+    width: v.$size-rem-md;
+    height: v.$size-rem-md;
+    background: v.$color-main-background;
+    border-radius: v.$border-radius-abs-xs;
+    border: v.$border-separator-thin;
+    transition: box-shadow v.$time-transition;
+
+    &:focus {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:hover {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:active {
+        box-shadow: v.$box-shadow-pressed;
+    }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-background;
+    }
+
+    &:invalid {
+        background: v.$color-invalid-background;
+        border: v.$border-invalid-thin;
+    }
+
+    &:checked::after {
+        display: inline-block;
+        position: absolute;
+        top: - v.$size-abs-xs;
+        content: "✔";
+    }
+}
