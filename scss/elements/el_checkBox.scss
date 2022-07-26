@@ -1,19 +1,20 @@
 /*
-ラジオボタンのスタイル定義
+チェックボックス要素のスタイル定義
 */
 
 @use "../variables" as v;
 
 /*
-ラジオボタン要素
+チェックボックス要素
 */
-.el_radio {
+.el_checkBox {
     display: inline-block;
     appearance: none;
+    position: relative;
     width: v.$size-rem-md;
     height: v.$size-rem-md;
     background: v.$color-main-background;
-    border-radius: v.$border-radius-circle;
+    border-radius: v.$border-radius-abs-xs;
     border: v.$border-separator-thin;
     transition: box-shadow v.$time-transition;
 
@@ -39,8 +40,10 @@
         border: v.$border-invalid-thin;
     }
 
-    &:checked {
-        background: v.$color-main-text;
-        background: radial-gradient(circle, v.$color-main-text 30%, v.$color-main-background 60%);
+    &:checked::after {
+        display: inline-block;
+        position: absolute;
+        top: - v.$size-abs-xs;
+        content: "✔";
     }
 }
