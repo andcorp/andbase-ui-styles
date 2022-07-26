@@ -14,6 +14,7 @@ input要素
     border-radius: v.$border-radius-abs-xs;
     border: v.$border-separator-thin;
     padding: v.$space-abs-xs;
+    transition: box-shadow v.$time-transition, background-color v.$time-transition, color v.$time-transition;
 
     &::placeholder {
         color: v.$color-main-placeholder;
