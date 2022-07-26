@@ -1,0 +1,42 @@
+/*
+フォームブロックのスタイル定義
+*/
+
+@use "../variables" as v;
+@use "../utilities" as u;
+
+/*
+フォームブロック
+*/
+.bl_formBlock {
+    padding: v.$space-abs-md;
+    background: v.$color-sub-background;
+    border-radius: v.$border-radius-abs-sm;
+
+    /*
+    グリッド表示
+    */
+    &.bl_formBlock__grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        row-gap: v.$space-abs-sm;
+        column-gap: v.$space-abs-sm;
+
+        /**
+        モバイル時は1カラムに変更
+        */
+        @include u.break-point-query-width("mobile") {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /*
+    フォームブロック項目
+    */
+    .bl_formBlock_item {
+        margin-top: v.$space-abs-sm;
+    }
+    .bl_formBlock_item:first-child {
+        margin-top: 0;
+    }
+}
