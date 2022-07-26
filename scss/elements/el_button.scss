@@ -19,6 +19,7 @@
 
     color: v.$color-main-text;
     background: v.$color-sub-background;
+    transition: box-shadow v.$time-transition, background-color v.$time-transition, color v.$time-transition;
 
     &:hover {
         background: color.adjust(v.$color-sub-background, $saturation: -3%, $lightness: -3%);
@@ -26,6 +27,10 @@
 
     &:active {
         box-shadow: v.$box-shadow-pressed;
+    }
+
+    &:focus {
+        box-shadow: v.$box-shadow-pressable-focused;
     }
 
     &:disabled {
@@ -44,6 +49,7 @@
         &.el_button__#{$themeColor} {
             background: $background;
             color: $text-color;
+            transition: box-shadow v.$time-transition, background-color v.$time-transition, color v.$time-transition;
 
             &:hover {
                 background: color.adjust($background, $saturation: -3%, $lightness: -3%);

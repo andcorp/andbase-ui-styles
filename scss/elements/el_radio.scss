@@ -16,6 +16,7 @@
     background: v.$color-main-background;
     border-radius: v.$border-radius-circle;
     border: v.$border-separator-thin;
+    transition: box-shadow v.$time-transition;
 
     &:focus {
         box-shadow: v.$box-shadow-focused;
