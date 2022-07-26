@@ -41,6 +41,7 @@
     }
 
     &:checked {
+        background: v.$color-main-text;
         background: radial-gradient(circle, v.$color-main-text 30%, v.$color-main-background 60%);
     }
 }
