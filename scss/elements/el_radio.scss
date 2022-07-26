@@ -1,0 +1,45 @@
+/*
+ラジオボタンのスタイル定義
+*/
+
+@use "../variables" as v;
+
+/*
+ラジオボタン要素
+*/
+.el_radio {
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    width: v.$size-rem-md;
+    height: v.$size-rem-md;
+    background: v.$color-main-background;
+    border-radius: v.$border-radius-circle;
+    border: v.$border-separator-thin;
+
+    &:focus {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:hover {
+        box-shadow: v.$box-shadow-focused;
+    }
+
+    &:active {
+        box-shadow: v.$box-shadow-pressed;
+    }
+
+    &:disabled {
+        color: v.$color-main-disabled-text;
+        background: v.$color-sub-background;
+    }
+
+    &:invalid {
+        background: v.$color-invalid-background;
+        border: v.$border-invalid-thin;
+    }
+
+    &:checked {
+        background: radial-gradient(circle, v.$color-main-text 30%, v.$color-main-background 60%);
+    }
+}
