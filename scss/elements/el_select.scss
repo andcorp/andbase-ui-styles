@@ -1,23 +1,24 @@
 /*
-ラジオボタンのスタイル定義
+選択リスト要素のスタイル定義
 */
 
 @use "../variables" as v;
 
 /*
-ラジオボタン要素
+選択リスト要素
 */
-.el_radio {
+.el_select {
     display: inline-block;
-    width: v.$size-rem-md;
-    height: v.$size-rem-md;
+    color: v.$color-main-text;
     background: v.$color-main-background;
-    border-radius: v.$border-radius-circle;
+    border-radius: v.$border-radius-abs-xs;
     border: v.$border-separator-thin;
-    transition: box-shadow v.$time-transition;
+    padding: v.$space-abs-xs;
+    transition: box-shadow v.$time-transition, background-color v.$time-transition, color v.$time-transition;
 
     &:focus {
         box-shadow: v.$box-shadow-focused;
+        border: v.$border-focus-thin;
     }
 
     &:hover {
@@ -36,10 +37,5 @@
     &:invalid {
         background: v.$color-invalid-background;
         border: v.$border-invalid-thin;
-    }
-
-    &:checked {
-        background: v.$color-main-text;
-        background: radial-gradient(circle, v.$color-main-text 30%, v.$color-main-background 60%);
     }
 }
