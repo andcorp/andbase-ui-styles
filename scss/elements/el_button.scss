@@ -14,6 +14,7 @@
     display: inline-block;
     font-size: v.$font-size-md;
     border-radius: v.$border-radius-abs-sm;
+    border: v.$border-transparent;
     padding: v.$space-abs-sm;
     box-shadow: v.$box-shadow-pressable;
 
@@ -31,6 +32,7 @@
 
     &:focus {
         box-shadow: v.$box-shadow-pressable-focused;
+        border: v.$border-focus-thin;
     }
 
     &:disabled {
