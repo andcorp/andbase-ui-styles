@@ -15,7 +15,7 @@ $separator-thin: solid $width-thin color.$separator-border;
 $invalid-thin: solid $width-thin color.$invalid;
 
 // フォーカス状態罫線定義
-$focus-thin: solid $width-thin color.$focus;
+$focus-thin: solid $width-thin color.$focus-border;
 
 // 透明罫線定義
 $transparent: solid $width-thin transparent;

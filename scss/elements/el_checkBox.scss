@@ -20,6 +20,7 @@
 
     &:focus {
         box-shadow: v.$box-shadow-focused;
+        border: v.$border-focus-thin;
     }
 
     &:hover {
