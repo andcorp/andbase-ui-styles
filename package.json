@@ -1,6 +1,6 @@
 {
   "name": "@andcorp/andbase-ui-styles",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AND Base UI styles",
   "main": "index.js",
   "files": [
