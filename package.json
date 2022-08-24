@@ -1,19 +1,17 @@
 {
   "name": "@andcorp/andbase-ui-styles",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "AND Base UI styles",
+  "keywords": ["front-end", "scss", "sass", "css", "web"],
   "main": "index.js",
   "files": [
     "/dist/**/*.{css,map}",
     "/scss/**/*.scss"
   ],
-  "repository": "git@github.com:andcorp/andbase-ui-styles.git",
+  "repository": "https://github.com/andcorp/andbase-ui-styles.git",
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "@andcorp:registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/"
   },
