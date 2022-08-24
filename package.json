@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "AND Base UI styles",
   "main": "index.js",
+  "files": [
+    "/dist/**/*.{css,map}",
+    "/scss/**/*.scss"
+  ],
   "repository": "git@github.com:andcorp/andbase-ui-styles.git",
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
