@@ -2,6 +2,7 @@
   "name": "@andcorp/andbase-ui-styles",
   "version": "0.0.5",
   "description": "AND Base UI styles",
+  "keywords": ["front-end", "scss", "sass", "css", "web"],
   "main": "index.js",
   "files": [
     "/dist/**/*.{css,map}",
